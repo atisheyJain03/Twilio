@@ -4,7 +4,7 @@ const sendMessage = require('./Controller/sendMessage')
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.status(200).send("Welcome")
+    res.send("Welcome")
 })
 
 router.post("/whatsApp", sendMessage);
